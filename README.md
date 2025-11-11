@@ -169,7 +169,7 @@ Open the Claude config file with your text editor. The file is located at:
       "args": [ ... ]
     },
     "mt5-local-server": {
-      "command": "/home/codexwz01d/claude-mt5-mcp/run.sh",
+      "command": "/home/user_name/claude-mt5-mcp/run.sh",
       "args": []
     }
   }
