@@ -139,12 +139,12 @@ Run this command while in your project folder to get the exact path:
 pwd
 ```
 
-It will output something like: `/home/codexwz01d/claude-mt5-mcp`. Copy this path.
+It will output something like: `/home/user_name/claude-mt5-mcp`. Copy this path.
 
 **2. Edit the Claude Config File**
 
 Open the Claude config file with your text editor. The file is located at:
-`/home/codexwz01d/.config/Claude/claude_desktop_config.json`
+`/home/user_name/.config/Claude/claude_desktop_config.json`
 
 **BEFORE YOU EDIT,** your file might look like this (or be empty):
 
