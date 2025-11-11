@@ -2,8 +2,6 @@
 
 ## ***COMPLETION PENDING***
 
-# Claude MT5 MCP Server
-
 > A local MCP server for Claude Desktop to interact with the MetaTrader 5 terminal running on Linux via Wine.
 
 This project bridges the gap between the native Linux Claude Desktop application and the Windows-only MetaTrader 5 terminal. It allows Claude to access account information, pull market data, and analyze indicators directly from your trading platform.
