@@ -1,2 +1,2 @@
-MetaTrader5
+# This package is installed using the system's normal pip or "wine pip"
 jsonschema
