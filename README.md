@@ -1,4 +1,6 @@
-# Claude MT5 MCP Server
+# Claude MT5 MCP Server Linux-Specific
+
+## ***COMPLETION PENDING***
 
 This project provides a local MCP (Multi-Capability Provider) server that acts as a bridge between Claude and the MetaTrader 5 (MT5) trading terminal. It allows Claude to access market data, account information, and potentially execute trades through the MT5 platform.
 
