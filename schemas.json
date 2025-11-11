@@ -1,0 +1,130 @@
+[
+  {
+    "name": "mt5.get_account_info",
+    "description": "Get account information",
+    "parameters": {
+      "type": "object",
+      "properties": {}
+    },
+    "returns": {
+      "type": "object",
+      "properties": {
+        "login": {
+          "type": "integer"
+        },
+        "balance": {
+          "type": "number"
+        },
+        "currency": {
+          "type": "string"
+        },
+        "server": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  {
+    "name": "mt5.get_symbol_tick",
+    "description": "Get the latest tick for a symbol",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "symbol": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "symbol"
+      ]
+    },
+    "returns": {
+      "type": "object",
+      "properties": {
+        "ask": {
+          "type": "number"
+        },
+        "bid": {
+          "type": "number"
+        },
+        "time": {
+          "type": "integer"
+        }
+      }
+    }
+  },
+  {
+    "name": "mt5.get_historical_data",
+    "description": "Get historical data for a symbol",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "symbol": {
+          "type": "string"
+        },
+        "timeframe": {
+          "type": "string",
+          "description": "e.g., TIMEFRAME_H1"
+        },
+        "count": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "symbol",
+        "timeframe",
+        "count"
+      ]
+    },
+    "returns": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "mt5.get_indicator_value",
+    "description": "Get the value of a technical indicator",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "symbol": {
+          "type": "string"
+        },
+        "timeframe": {
+          "type": "string"
+        },
+        "indicator": {
+          "type": "string",
+          "enum": [
+            "SMA",
+            "RSI"
+          ]
+        },
+        "period": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "symbol",
+        "timeframe",
+        "indicator",
+        "period"
+      ]
+    },
+    "returns": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "number"
+        }
+      }
+    }
+  }
+]

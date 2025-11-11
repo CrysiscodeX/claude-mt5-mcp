@@ -1,0 +1,14 @@
+{
+  "name": "MetaTrader 5 Local Bridge",
+  "version": "1.0.0",
+  "description": "Connects Claude to the local MT5 terminal for analysis and data.",
+  "mcp_server": {
+    "type": "stdio",
+    "command": "/home/codexwz01d/claude-mt5-mcp/run.sh",
+    "args": []
+  },
+  "permissions": [
+    "mcp"
+  ],
+  "note": "IMPORTANT: You MUST edit the 'command' field in this file to point to the absolute path of 'run.sh' on your system."
+}
